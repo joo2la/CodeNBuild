@@ -3,7 +3,7 @@ from furni_list import *
 from player import *
 from map import *
 
-version = "0.1 BETA TEST"
+version = "0.1 ALPHA"
 op_list = ["1", "2", "3", "4"]
 map_created = False
 player_created = False
@@ -61,9 +61,13 @@ while True:
                     message = input("Chat>")
                     chat.append(message)
                 else:
-                    username = input("Enter you Username>")
-                    x = input("Enter X Coordinate>")
-                    y = input("Enter Y Coordinate>")
-                    my_player = simple_player(username, x, y)
-                    player_created = True
-                    my_map.add_furni_in_coordinates(int(x), int(y), "@")
+                    if map_created:
+                        username = input("Enter you Username>")
+                        x = input("Enter X Coordinate>")
+                        y = input("Enter Y Coordinate>")
+                        my_player = simple_player(username, x, y)
+                        player_created = True
+                        my_map.add_furni_in_coordinates(int(x), int(y), "@")
+                    else:
+                        print("Map is not created :(")
+                        player_mode = False
