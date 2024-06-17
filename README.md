@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # CodeNBuild v0.2 ALPHA
 
 **-Полный перевод на РУССКИЙ**
@@ -26,18 +24,3 @@
 ```
 python3 main.py
 ```
-=======
-FIRST VERSION
-
-We add
--Map
--Furni
--Player Mode
--Chat
-
-To run the Emulator, use the "main.py" file.
-
-Interface type: Console
-
-There are things available in the game (but.. you cannot interact with them..)
->>>>>>> 2a7bd0a771a996347269461b3473997edfe1c9ae
