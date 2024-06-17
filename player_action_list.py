@@ -1,5 +1,5 @@
 ACTION = {
-1: "Stand",
-2: "Sit",
-3: "Lay"
+1: "stand",
+2: "sit",
+3: "lay"
 }
